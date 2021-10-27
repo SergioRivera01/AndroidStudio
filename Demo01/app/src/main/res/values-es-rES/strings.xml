@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo01</string>
+    <string name="label_first_name">Nombre</string>
+    <string name="label_last_name">Apellido</string>
+    <string name="label_continue">Continuar</string>
+    <string name="button_required">Requerido</string>
+    <string name="type_name">Escribe tu nombre</string>
+    <string name="type_last_name">Escribe tus apellidos</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_label_name"
+        style="@style/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_last_name"
+        style="@style/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_last_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Juan"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_name" />
+
+    <TextView
+        android:id="@+id/tv_last_name"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gomez"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_last_name" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="304dp"
+        android:text="@string/label_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_required"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="@string/button_required"
+        app:layout_constraintEnd_toEndOf="@+id/btn_confirm"
+        app:layout_constraintStart_toStartOf="@+id/btn_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Switch
+        android:id="@+id/sw_comertial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="Commertial accept"
+        app:layout_constraintEnd_toEndOf="@+id/iv_avatar"
+        app:layout_constraintStart_toStartOf="@+id/iv_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_departamento"
+        style="@style/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Departamento"
+        app:layout_constraintStart_toStartOf="@+id/tv_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_last_name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ninguno"
+        app:layout_constraintStart_toStartOf="@+id/tv_departamento"
+        app:layout_constraintTop_toBottomOf="@+id/tv_departamento" />
+</androidx.constraintlayout.widget.ConstraintLayout>

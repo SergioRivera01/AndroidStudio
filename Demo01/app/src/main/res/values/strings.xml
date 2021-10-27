@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Demo01</string>
+    <string name="label_first_name">Name</string>
+    <string name="label_last_name">last_name</string>
+    <string name="label_continue">Continue</string>
+    <string name="button_required">Required</string>
+    <string name="type_name">Type your first name</string>
+    <string name="type_last_name">Type your last name</string>
+</resources>
